@@ -13,3 +13,5 @@ stop:
 	
 down:
 	./vendor/bin/sail down
+cdu:
+	.cd /mnt/c/Users/SONATA\ STUDIO/shoeweb
