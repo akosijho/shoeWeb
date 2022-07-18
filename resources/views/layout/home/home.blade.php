@@ -1,11 +1,13 @@
 
 <section class ="home">
       
-
+<!-- <img src="Images/curve.png" class="curve"> -->
   <div class="container">
+  
   <div class="navbar">
+  
     <img src="Images/app_logo.png" class="logo">
-                  <nav>
+    <nav>
                   <ul id="menuList" >
 				<li><a href="index.html">Home</a></li>
 				<li><a href="#features">Feature</a></li>
@@ -36,8 +38,11 @@
 
       </div>
 
-      
+     
   </div>
+  <div class="how_title">
+		
+</div>
   <script>
       var menuList = document.getElementById("menuList")
       menuList.style.maxHeight = "0px";

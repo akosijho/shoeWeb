@@ -12,8 +12,23 @@
 <body>
     @yield('content')
     
-</body>
  <!--=============== SCROLL REVEAL===============-->
- <script src="public/js/scrollreveal.min.js"></script>
+ <script src="js/scrollreveal.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+ <script>
+    $(window).scroll(function() {
+        if($(window).scrollTop()){
+            $(".navbar").addClass("black");
+        }
+        else{
+            $(".navbar").removeClass("black");
+        }
+
         
+    });
+
+ </script>      
+
+</body>
+ 
 </html>
