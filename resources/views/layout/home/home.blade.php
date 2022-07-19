@@ -1,24 +1,10 @@
 
-<section class ="home">
+<section class ="home" id="home">
       
-<!-- <img src="Images/curve.png" class="curve"> -->
+<img src="Images/curve.png" class="curve">
   <div class="container">
   
-  <div class="navbar">
-  
-    <img src="Images/app_logo.png" class="logo">
-    <nav>
-                  <ul id="menuList" >
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#features">Feature</a></li>
-				<li><a href="#howitworks">How it Works</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Contact us</a></li>
-			</ul>
-                  </nav>
-                  
-      <img src="Images/menu.png" alt="" class="menu-icon" onclick="togglemenu()">
-  </div>
+
   
   
   <div class ="row">
@@ -34,15 +20,13 @@
 
 
       <div class ="col-2">
-      <img src="Images/Object.png" class="cp1" >
+      <img src="Images/Object1.png" class="cp1" >
 
       </div>
 
      
   </div>
-  <div class="how_title">
-		
-</div>
+  
   <script>
       var menuList = document.getElementById("menuList")
       menuList.style.maxHeight = "0px";

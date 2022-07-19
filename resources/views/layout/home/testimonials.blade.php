@@ -1,4 +1,4 @@
-<section class="sectionsT">
+<section class="sectionsT" id="testimonials">
 	<div class="contitleT">
 		<h1 class="titleT">Testimonials</h1>
 	</div>

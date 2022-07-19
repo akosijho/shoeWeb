@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Document</title>
 </head>
 <body>
     @yield('content')
     
  <!--=============== SCROLL REVEAL===============-->
- <script src="js/scrollreveal.min.js"></script>
+ 
  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
  <script>
     $(window).scroll(function() {
@@ -28,6 +28,10 @@
     });
 
  </script>      
+ 
+ <script src ="./index.js"></script>
+    // ScrollReveal().reveal('.cp1',{delay: 500});
+ 
 
 </body>
  

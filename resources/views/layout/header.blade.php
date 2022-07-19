@@ -1,12 +1,12 @@
-<header> <nav>
-        <a href="#" class="brand">Ravi ED</a>
+<header id="header">
+     <nav>
+        <a href="#" class="brand"><img src="Images/app_logo.png" class="logo"></a>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact</a></li>
+                <li> <a href="#home">Home</a></li>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#howitworks">How it Works</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="#contact">Contact us</a></li>
         </ul>
     </nav>
     <script>
