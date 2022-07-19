@@ -30,7 +30,6 @@
  </script>      
  
  <script src ="./index.js"></script>
-    // ScrollReveal().reveal('.cp1',{delay: 500});
  
 
 </body>
