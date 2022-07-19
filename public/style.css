@@ -106,6 +106,10 @@ nav ul li a{
 	/* font-weight: 400; */
 	font-size: 15px;
 }
+nav ul li a:active
+{
+	color: 	#007F66;
+}
 
 nav.sticky .brand, 
 nav.sticky ul li a{
