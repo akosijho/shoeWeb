@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Products;
+use App\Models\Product;
 use App\Models\User;
 
 class ProductsController extends Controller
@@ -11,7 +11,7 @@ class ProductsController extends Controller
     // display data
     function index()
     {
-        return response()->json(Products::all(), 200);
+        return response()->json(Product::all(), 200);
     }
 
 
@@ -22,7 +22,7 @@ class ProductsController extends Controller
     // search data
     function searchByid($id)
     {
-        $products = Products::find($id);
+        $products = Product::find($id);
         if(is_null($products)) {
             return response()->json(['message' => 'Products Not Found', 404]);
         }
@@ -37,7 +37,7 @@ class ProductsController extends Controller
     function save(Request $request)
     {
         
-        $products = new Products;
+        $products = new Product;
         $products->name = $request->name;
         $products->description = $request->description;
         $products->price = $request->price;
@@ -65,7 +65,7 @@ class ProductsController extends Controller
      function update(Request $request, $id)
     {
 
-        $products = Products::find($id);
+        $products = Product::find($id);
 
         $products->name = $request->name;
         $products->description = $request->description;
@@ -101,9 +101,9 @@ class ProductsController extends Controller
     function delete(Request $request, $id)
     {
 
-         $product = Products::find($id);
+         $product = Product::find($id);
         if(is_null($product)) 
-        {
+        { 
             return response()->json(['message' => 'Product Not Found', 404]);
         }
 
