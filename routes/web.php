@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,9 @@ Route::get('/welcome', function () {
 Route::get('/', function () {
     return view('index');
 });
+// Route::get('/contactus', function () {
+//     return view('contactus');
+// });
+
+Route::post('/contactus', [ArticleController::class, 'save']);
 

@@ -10,6 +10,9 @@ up:
 
 stop:
 	./vendor/bin/sail stop
+
+migrate:
+	./vendor/bin/sail php artisan migrate
 	
 down:
 	./vendor/bin/sail down
@@ -18,3 +21,4 @@ move-up:
 	cd '/mnt/c/Users/SONATA STUDIO/' && pwd
 message:
 	echo "hello world"
+

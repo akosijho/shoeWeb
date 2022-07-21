@@ -14,6 +14,10 @@
       <div class="store">
       <a href="https://apps.apple.com/us/app/facebook/id284882215?itsct=apps_box_badge&amp;itscg=30200" ><img src="Images/astore.png" alt="Download on the App Store" ></a>
       <a href='https://play.google.com/store/apps/details?id=com.rovio.abcasual&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='Images/gplay.png' class="googleplay"/></a>
+      
+      <div class="rectangle">
+      <img src="Images/rectangle.png" class="">
+      </div>
       </div>
       </div>
 

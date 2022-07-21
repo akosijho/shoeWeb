@@ -31,7 +31,7 @@
 	  </div>
 
 	  <!-- HOW SECTION #3 -->
-	<div class ="how_row">
+	<div class ="how_3_row">
       <div class ="how_col-1">
       <h2>Select the best driver</h2> 
       <p>With inDriver, you can book rides way cheaper!<br>
@@ -45,7 +45,7 @@
 	  </div>
 
 	  <!-- HOW SECTION #4 -->
-	  <div class ="how_2_row">
+	  <div class ="how_4_row">
 	  <div class ="how_2_col-1">
       <img src="Images/cp4.png" class="cp2" >
       </div>
