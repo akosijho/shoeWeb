@@ -1,6 +1,9 @@
 # install build-essential if you cannot run make commands
 # example use: 
 # make up
+#
+# SAIL ALIAS
+# alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
 env:
 	cp .env.example .env
