@@ -20,9 +20,13 @@ Route::get('/welcome', function () {
 Route::get('/', function () {
     return view('index');
 });
-// Route::get('/contactus', function () {
-//     return view('contactus');
-// });
+Route::get('/about', function () {
+    return view('layout.home.about');
+});
+
+Route::get('/home', function () {
+    return view('index');
+});
 
 Route::post('/contactus', [ArticleController::class, 'save']);
 

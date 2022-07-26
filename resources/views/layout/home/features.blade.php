@@ -4,6 +4,7 @@
 	</div>
 	
 	<div class="containers">
+	
 	<div class="card">
 		<div class="card-image">
 			<div class="square">
@@ -49,7 +50,7 @@
 				Lorem ipsum dolor sit amet,  consectetur 
 				adipiscing elit.
 			</p>
-			</div>
+							</div>
 		</div>
 		
 		
