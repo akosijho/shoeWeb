@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\SocialiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +36,15 @@ Route::put('/products/{id}', [ProductsController::class,'update']);
 
 // delete products
 Route::delete('/products/{id}', [ProductsController::class,'delete']);
+
+
+
+//Authentication
+Route::post('/auth/register',[AuthController::class,'createUser']);
+Route::post('/auth/login',[AuthController::class,'loginUser']);
+
+
+
+//Socialite Google
+Route::get('/auth/google/redirect', [SocialiteController::class, 'googleredirect']);
+Route::get('/auth/google/callback', [SocialiteController::class, 'googlecallback']);
