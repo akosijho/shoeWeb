@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Images/app_logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+    
+    
    
     <!-- <link rel="stylesheet" href="styles.sass"> -->
-    <!-- <link rel="stylesheet/scss" type="text/css" href="styles.sass"> -->
+    
+    <!-- <link rel="stylesheet/scss" type="text/css" href="style2.scss"> -->
     
     
-   
+    
+    @vite(['resources/css/style.css'])
 
     <title>Shoe-Web</title>
 </head>
@@ -21,6 +25,7 @@
 </div> -->
 <!-- <div id="loading"></div> -->
 
+   @yield('content')
     
     <h1>Hello World</h1>
     
