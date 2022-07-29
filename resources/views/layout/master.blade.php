@@ -16,7 +16,8 @@
 </div> -->
 <!-- <div id="loading"></div> -->
 
-    @yield('content')
+    
+    <h1>Hello World</h1>
     
  <!--=============== SCROLL REVEAL===============-->
  <script src="https://unpkg.com/scrollreveal"></script>
@@ -40,29 +41,13 @@
  
 
  <script>
-        // $(windows).on("load",function(){
-        //   $(".loader-wrapper").fadeOut("slow");
-        // });
-
-        // $(document).ready(function(){
-        // $('.loader-wrapper').fadeOut(500);
-        //     });
-
-        // var loader = getElementbyID("loads");
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
     </script>
- <script>
-		// $(document).ready(function(){
-			// 	$('div#loading').removeAttr('id');
-		// });
-		var preloader = document.getElementById("loading");
-		// window.addEventListener('load', function(){
-		// 	preloader.style.display = 'none';
-		// 	})
 
-		function myFunction(){
-			preloader.style.display = 'none';
-		};
-	</script>
+
+
 </body>
  
 </html>

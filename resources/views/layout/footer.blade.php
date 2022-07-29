@@ -58,4 +58,9 @@
         <p>2021 abc P Ltd, All Right Reserved</p>
     </div>
 </footer>
+
+
 </section>
+<div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
