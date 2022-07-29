@@ -5,13 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Images/app_logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-   
-    <!-- <link rel="stylesheet" href="styles.sass"> -->
-    <!-- <link rel="stylesheet/scss" type="text/css" href="styles.sass"> -->
     
-    
-   
+    @vite(['resources/css/style.css', 'resources/js/app.js'])
 
     <title>Shoe-Web</title>
 </head>
@@ -42,11 +37,7 @@
 
  </script>      
  
- <script src ="./index.js"></script>
- <script src ="./scrollanchor.js"></script>
- <script src ="./jquery-3.6.0.min.js"></script>
- <script src ="./scrollreveal.min.js"></script>
- 
+    @vite(['resources/js/index.js','resources/js/scrollanchor.js', 'resources/js/scrollreveal.min.js'])
  
 
  <script>
