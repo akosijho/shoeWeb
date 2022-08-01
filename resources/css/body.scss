@@ -1,0 +1,24 @@
+$variable: rgb(12, 163, 45);
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	
+
+	
+	margin: 0;
+	padding: 0;
+	max-height: 999px;
+	font-family: 'Open Sans', sans-serif;
+	width: fit-content;
+	position: relative;
+
+}
+h2
+{
+	color: $variable;
+}

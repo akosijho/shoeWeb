@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="Images/app_logo.png" type="image/x-icon">
     
-    @vite(['resources/css/style.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <title>Shoe-Web</title>
 </head>
 <body>
-<!-- <div class="loader-wrapper" id="loads">
-    <span class="loader"><span class="loader-inner"></span></span>
-</div> -->
-<!-- <div id="loading"></div> -->
 
     
-    <h1>Hello World</h1>
+    @yield('content')
     
  <!--=============== SCROLL REVEAL===============-->
  <script src="https://unpkg.com/scrollreveal"></script>
