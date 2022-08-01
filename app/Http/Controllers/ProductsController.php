@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\User;
+use Illuminate\Support\Facades\Validator;
 
 class ProductsController extends Controller
 {
@@ -36,23 +37,44 @@ class ProductsController extends Controller
     // insert data
     function save(Request $request)
     {
+
+        $validated = $request->validate([
+         'images' => 'required|image|mimes:jpg,png,jpeg'
+        ]);
+
+        if($validated->fails())
+        {
+             return response()->json([
+                        'status' => false,
+                        'message' => 'Validation error',
+                        'errors' => $validated->errors()
+                    ], 401);
+        }
+        
+
+
         
         $products = new Product;
         $products->name = $request->name;
         $products->description = $request->description;
         $products->price = $request->price;
-         if($request->hasfile('file'))
-        {
-            $file = $request->file('file');
-            $imageName=time().'_'.$file->getClientOriginalName();
-            $file->move(\public_path("storage/products_image"),$imageName);
-            $products->images = 'storage/products_image/'.$imageName;
-        }
-        $products->sizes = $request->sizes;
 
-        
+
+        $images = $request->file('images');
+        $imageName='';
+        foreach($images as $image)
+        {
+            $new_name = rand().'.'.$image->getClientOriginalExtension();
+            $image->move(public_path('storage/products_image'),$new_name);
+            $imageName=$imageName.'storage/products_image/'.$new_name.",";
+        }
+        $imagedb=$imageName;
+        $products->images = $imagedb;
+
+        $products->sizes = $request->sizes;
         $products = $products->save();
         return response($products, 201);
+    
 
     }
 

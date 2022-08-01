@@ -18,7 +18,7 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 Route::get('/', function () {
-    return view('index');
+    return view('nike');
 });
 // Route::get('/contactus', function () {
 //     return view('contactus');
