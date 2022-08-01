@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Images/app_logo.png" type="image/x-icon">
     
-    @vite(['resources/css/style.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <title>Shoe-Web</title>
 </head>
@@ -17,7 +17,7 @@
 <!-- <div id="loading"></div> -->
 
     
-    <h1>Hello World</h1>
+    @yield('content')
     
  <!--=============== SCROLL REVEAL===============-->
  <script src="https://unpkg.com/scrollreveal"></script>

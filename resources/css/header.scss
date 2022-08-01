@@ -1,0 +1,140 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header
+{
+	max-width: 100%;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    background:	#D7EAE6;  
+    padding: 25px 100px;
+    z-index: 1;
+	
+}
+
+nav.sticky{
+    padding: 5px 100px;
+    background: #fff;
+	box-shadow: 1px -1px 83px -29px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 1px -1px 83px -29px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px -1px 83px -29px rgba(0,0,0,0.75);
+
+}
+nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+}
+
+nav ul li a{
+    position: relative;
+    margin: 0 25px;
+    text-decoration: none;
+    color:#000000;
+    /* letter-spacing: 2px; */
+    font-weight: 500;
+    transition: 0.6s;
+	font-family: 'Open Sans', sans-serif;
+	/* font-weight: 400; */
+	font-size: 15px;
+}
+nav.sticky .brand, 
+nav.sticky ul li a{
+    color: #000;
+
+}
+
+
+.logo{
+	width: 50px;
+	cursor: pointer;
+	
+}
+.menu-icon
+{
+	width: 25px;
+	cursor: pointer;
+	display: none;
+}
+nav ul li a:hover
+{
+	color: 	#007F66;
+}
+ul{
+	font-family: 'Open Sans', sans-serif;
+}
+.text h2
+{
+	position: absolute;
+width: 640px;
+height: 57px;
+left: 204px;
+top: 298px;
+
+font-family: 'Open Sans';
+/* font-style: normal; */
+font-weight: 700;
+font-size: 42px;
+line-height: 57px;
+
+color: #000000;
+
+}
+.text p
+{
+	position: absolute;
+width: 529px;
+height: 34px;
+left: 204px;
+top: 371px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 34px;
+/* identical to box height */
+
+
+color: #4B81F4;
+}
+.textbottom h2
+{
+	position: absolute;
+width: 281px;
+height: 57px;
+left: 580px;
+top: 782px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 57px;
+
+color: #000000;
+}
+.rectangle
+{
+	position: absolute;
+width: 147px;
+height: 156.1px;
+left: 50px;
+top: 647px;}

@@ -1,0 +1,144 @@
+/* TESTIMONIALS */
+.containersT {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 143px;
+
+}
+
+.cardT{
+	background: white;
+	width: 533px;
+	height: 387px;
+	margin: 10px;
+	box-shadow: 15px;
+	border: 50% solid black;
+	/*padding-left: 37px;*/
+
+}
+
+
+.squareT{
+	width: 500px;
+	height: 470px;
+	padding-left: 80px;
+	
+
+}
+.square2T{
+	width: 500px;
+	height: 470px;
+	padding-right: 80px;
+
+}
+
+
+
+.catT{
+	padding-top: 40px;
+}
+
+.card-imageT{
+	padding-top: 55px;
+	padding-left: 30px;
+	
+}
+.formT{
+	padding-top: 55px;
+	padding-left: 30px;
+	text-align: center;
+}
+.squareT{
+	display: flex;
+	padding-top: 5px;
+	position: absolute;
+	margin: auto;
+
+}
+.containersT{
+	max-width: 100%;
+}
+
+.squareT img{
+	width: 100%;
+	height: 450px;
+	margin: auto;
+
+	
+
+}
+.square2T{
+	display: flex;
+	padding-top: 5px;
+	position: absolute;
+	margin: auto;
+	
+}
+
+.square2T img{
+	width: 100%;
+	height: 450px;
+	margin: auto;
+	
+	
+
+}
+.contenttextT{
+	font-family: 'Open Sans', sans-serif;
+	color: #333333;
+	font-size: 19px;
+}
+.catT h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.000em;
+
+}
+.contentT{
+	padding-top: 70px;
+	font-size: 0.938em;
+}
+.titleT{
+	text-align: center;
+	padding-bottom: 50px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.800em;
+}
+
+.arrowT button{
+	width: 64px;
+	height: 48px;
+	border-radius: 5px;
+}
+.arrowT{
+	padding-top: 45px;
+}
+
+.arrowT #btn1{
+	border: 1px solid #AFAFAF;
+	background-color: #ffff;
+}
+
+.arrowT #btn2{
+	border: 1px solid #AFAFAF;
+	background-color: #00B16E;
+	margin-left: 20px;
+}
+
+.nameT{
+	font-family: 'Open Sans', sans-serif;
+}
+.recT{
+	position: absolute;
+	padding-top: 17%;
+	margin-right: 85%;
+	
+
+}
+
+.rec2T{
+	position: absolute;
+	padding-top: 30%;
+	margin-left: 85%;
+	
+
+}
