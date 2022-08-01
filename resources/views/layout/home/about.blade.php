@@ -121,5 +121,6 @@
 
 
 </section>
+@include('layout.home.whatareyouwaiting')
 @include('layout.footer') 
 @endsection
