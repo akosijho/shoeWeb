@@ -50,3 +50,18 @@ ScrollReveal().reveal('.card_3', {
     origin: 'right'
     
 });
+
+ScrollReveal().reveal('.teamrow_1', {
+    delay: 700,
+    duration: 2000,
+    distance: '50px',
+    origin: 'left'
+    
+});
+ScrollReveal().reveal('.teamrow_2', {
+    delay: 700,
+    duration: 2000,
+    distance: '50px',
+    origin: 'right'
+    
+});

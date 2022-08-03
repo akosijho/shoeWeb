@@ -1,10 +1,22 @@
 /* ABOUT */
 
-/* .section_about
-{
-	background: #D7EAE6;  
-	clip-path: polygon(100% 0,0 100%,100% 100%) ;
-} */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	
+
+	
+	margin: 0;
+	padding: 0;
+	max-height: 999px;
+	font-family: 'Open Sans', sans-serif;
+	width: fit-content;
+	position: relative;
+
+}
 
 .about_row
 {
@@ -13,7 +25,6 @@
 	justify-content: center;
 	background-image: url('../asset/images/flurabels.png');
 	background-repeat:no-repeat ;
-	/* background-attachment: fixed; */
 	background-size: auto;
   	background-position: center;
 	height: 948px;
@@ -23,7 +34,6 @@
 {
 	flex-basis: 100%;
 	position: relative;
-	/* margin-left: 50px; */
 	padding-top: 589px;
 }
 
@@ -56,7 +66,6 @@
 {
 	flex-basis: 100%;
 	position: relative;
-	/* margin-left: 50px; */
 	padding-top: 280px;
 	margin-bottom: 280px;
 	
@@ -65,7 +74,6 @@
 .about_col_1 p
 {
 	font-family: 'Open Sans';
-	/* font-style: normal; */
 	font-weight: 400;
 	font-size: 23px;
 	color: #444444;
@@ -73,18 +81,22 @@
 	padding-right: 131px;
 
 }
-.teamrow
+.teamtitle_row
 {
 	text-align: left;
 	display: flex;
-	/* justify-content: center; */
 	margin-bottom: 62px;
-	
 	position: relative;
-	margin-left: 165px;
-  	margin-right: auto;
+	flex-basis: 100%;
+    right: 0;
+    top: 0;
 
 }
+.teamtitle
+{
+    padding-left: 131px;
+}
+
 .teamtitle h1
 {
 	font-family: 'Open Sans';
@@ -103,16 +115,17 @@
 
 .faceid
 {
-	
-	margin-bottom: 8px;
-	
-}
-.baby
-{
 	width: 328px;
 	height: 227px;
-	border: 1px solid #444444;;
+	position: relative;
+	-webkit-box-shadow: 3px 8px 28px -7px rgba(3,3,3,0.87); 
+	box-shadow: 3px 8px 28px -7px rgba(3,3,3,0.87);
+    
+	margin-bottom: 8px;
+	
+	
 }
+
 .box
 
 {
@@ -130,6 +143,7 @@
 	margin-bottom: 62px;
 	width: 100%;
 	display: flex;
+    margin-left: 31px;
 	flex-basis: 100%;
 
 
@@ -139,8 +153,9 @@
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 62px;
-	width: 100%;
+	width: 100%; 
 	display: flex;
+    margin-left: 31px;
 	flex-basis: 100%;
 	
 
@@ -148,7 +163,6 @@
 .teamrows
 {
 	justify-content: center;
-	position: absolute;
 	margin-left: auto;
   	margin-right: auto;
 	width: 100%;
