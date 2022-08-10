@@ -6,6 +6,7 @@ use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SocialiteController;
 use App\Http\Controllers\SocialLoginController;
+use App\Http\Controllers\WishlistController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,7 @@ Route::post('/addproduct', [ProductsController::class,'save']);
 
 // display products
 Route::get('/products', [ProductsController::class,'index']);
+Route::get('/wishlist', [WishlistController::class,'wishlist']);
 
 Route::get('/products/category', [ProductsController::class,'category']);
 

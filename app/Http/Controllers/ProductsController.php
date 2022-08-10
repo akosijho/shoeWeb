@@ -14,7 +14,7 @@ class ProductsController extends Controller
     {
         return response()->json(Product::all(), 200);
     }
-
+    
 
 
 
