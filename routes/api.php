@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SocialiteController;
+use App\Http\Controllers\SocialLoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,8 +29,12 @@ Route::post('/addproduct', [ProductsController::class,'save']);
 // display products
 Route::get('/products', [ProductsController::class,'index']);
 
+Route::get('/products/category', [ProductsController::class,'category']);
+
 // search products
 Route::get('/products/{id}', [ProductsController::class,'searchByid']);
+
+Route::get('/products/category/{category}', [ProductsController::class,'searchByCategory']);
 
 // update products
 Route::put('/products/{id}', [ProductsController::class,'update']);
@@ -48,3 +53,10 @@ Route::post('/auth/login',[AuthController::class,'loginUser']);
 //Socialite Google
 Route::get('/auth/google/redirect', [SocialiteController::class, 'googleredirect']);
 Route::get('/auth/google/callback', [SocialiteController::class, 'googlecallback']);
+
+
+
+// Route::post('/sample',[GoogleSocialite::class,'login']);
+
+
+Route::post('social/login', [SocialLoginController::class, 'socialLogin']);

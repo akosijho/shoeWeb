@@ -132,5 +132,23 @@ class ProductsController extends Controller
         $product = $product->delete();
         return response(null, 204);
     }
+    
 
+    function category()
+    {
+        return response()->json(Product::select('category')->distinct()->get(), 200);
+    }
+
+
+    function searchByCategory($category)
+    {
+        if($category == "All"){
+            return response()->json(Product::all(), 200);
+        } else{
+        return response()->json(Product::where('category', '=',$category)->get(), 200);
+        }
+    }
+
+
+    
 }

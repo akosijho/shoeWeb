@@ -117,6 +117,7 @@ body{
     background-position: center;
     height: 100vh;
     width: 100%;
+    background-size: 90% 100vh;
 }
 
 /* Banner-details */
@@ -194,6 +195,169 @@ body{
     /* background-size: cover; */
     background-position: center;
 }
+
+
+/* Banner2 */
+/* .banner2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2em;
+    
+}
+
+.banner2 .bannerTitle{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    padding-left: 1.5em;
+}
+
+.banner2 .bannerCon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+   
+}
+
+.bannerTitle{
+    font-size: 1.8rem;
+   
+}
+
+.bannerConPic{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    font-size: 1.4rem;
+    color: gray;
+    
+
+}
+
+.bannerConPic img{
+    width: 100%;
+}
+
+ */
+
+
+ .banner2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    
+ }
+
+ .bannerTitle{
+    width: 100%;
+    padding-left: 3em;
+    font-size: 2rem;
+ }
+
+ .bannerCon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    font-size: 1.5rem;
+    
+
+ }
+
+ .bannerConPic{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    width: 45%;
+    
+    
+ }
+
+ .banner2 .bannerCon .bannerConPic p a{
+    font-size: 1rem;
+    color: grey;
+ }
+
+
+
+
+ /* slide2 */
+ .slide2{
+    width: 95%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin: auto;
+ }
+
+ .slide2{
+    margin-top: 5em;
+ }
+
+ .slide2Title{
+    border: 1px solid black;
+    font-size: 1.5rem
+
+    
+ }
+
+ .slide2PicCon{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+
+ }
+
+ .slide2pic1, .slide2pic2, .slide2pic3{
+    border: 1px solid black;
+    width: 35%;
+    /* text-align: center; */
+   
+ }
+
+
+ .slpic1{
+    width: 100%;
+ }
+
+
+ .namePrice {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+ }
+
+ .nameCont{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+ }
+
+ .priceCont{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+ }
+
+ 
+
+ 
+
+
+
 
 
 

@@ -35,9 +35,6 @@ class SocialiteController extends Controller
 
         else{
 
-            
-
-
              $uuid = Str::uuid()->toString();
              $user = new User();
              $user->name = $userdata->name;
@@ -46,7 +43,6 @@ class SocialiteController extends Controller
              $user->social_type = 'google';
 
              
-
              $Oauth = new Oauth();
              $Oauth->social_id = $userdata->id;
              $Oauth->token = $userdata->token;

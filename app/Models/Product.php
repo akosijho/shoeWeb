@@ -18,6 +18,6 @@ class Product extends Model
     ];
 
     protected $casts = [
-        'sizes' => 'array'
+        'sizes' => 'array', 'images' => 'array'
     ];
 }
