@@ -17,9 +17,10 @@ use App\Http\Controllers\ArticleController;
 Route::get('/welcome', function () {
     return view('welcome');
 });
-Route::get('/', function () {
+
+Route::get('/{any}', function () {
     return view('nike');
-});
+})->where('any','.*');
 // Route::get('/contactus', function () {
 //     return view('contactus');
 // });

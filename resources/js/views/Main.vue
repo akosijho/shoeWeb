@@ -7,6 +7,7 @@
   <Slide/>
   <Banner2/>
   <Slide2/>
+  
 </template>
 
 <script>

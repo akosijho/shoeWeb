@@ -9,6 +9,8 @@
 </head>
 <body>
     <div id="app"></div>
+    
+  <Router-view></Router-view>
     @vite('resources/js/app.js')
 </body>
 </html>
