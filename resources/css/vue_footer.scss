@@ -1,0 +1,21 @@
+.footer
+{
+    display: block;
+
+    .footer_row
+{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    
+    .footer_col_1 ul li , .footer_col_2 ul li , .footer_col_3 ul li
+    {
+        text-decoration: none;
+        list-style: none;
+    
+    }
+}
+
+
+
+}

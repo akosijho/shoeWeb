@@ -21,4 +21,6 @@ move-up:
 	cd '/mnt/c/Users/SONATA STUDIO/' && pwd
 message:
 	echo "hello world"
+alias:
+	alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
