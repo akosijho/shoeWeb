@@ -35,3 +35,7 @@ Route::get('/home', function () {
 
 
 Route::post('/contactus', [ArticleController::class, 'save']);
+
+Route::get('/rs', function () {
+    return view('rs');
+});
