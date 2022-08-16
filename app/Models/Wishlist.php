@@ -9,5 +9,5 @@ class Wishlist extends Model
 {
     use HasFactory;
     protected $table = 'wishlists';
-    protected $fillable = ['product_name','product_image'];
+    protected $fillable = ['shoeName','shoeImage','user_id'];
 }

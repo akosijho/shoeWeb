@@ -1,6 +1,7 @@
 <template>
   <div class="banner">
-  </div>
+    <img src="http://127.0.0.1:3000/resources/js/asset/images/banner.webp" alt="" class="slpic1">
+  </div >
 </template>
 
 <script>

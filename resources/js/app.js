@@ -4,8 +4,8 @@ import { createApp } from 'vue';
 
 // import router from './router';
 
-import Page from './views/Page.vue';
+import Main from './views/Main.vue';
 import router from './router';
 
-createApp(Page).use(router).mount("#app")
+createApp(Main).use(router).mount("#app")
 

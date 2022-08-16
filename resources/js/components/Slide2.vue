@@ -19,11 +19,25 @@
         
         <div class="slide2pic2">
         <img src="http://127.0.0.1:3000/resources/js/asset/images/cardb.webp" alt="" class="slpic1">
-            <p></p>
+            <div class="namePrice">
+                <div class="nameCont">
+                    <p id="exclusive">Member Access</p>
+                </div>
+                <div class="priceCont">
+                     <p id="price">5,795</p>
+                </div>
+            </div>
         </div>
         <div class="slide2pic3">
         <img src="http://127.0.0.1:3000/resources/js/asset/images/cardc.webp" alt="" class="slpic1">
-            <p></p>
+            <div class="namePrice">
+                <div class="nameCont">
+                    <p id="exclusive">Member Access</p>
+                </div>
+                <div class="priceCont">
+                     <p id="price">5,795</p>
+                </div>
+            </div>
         </div>
     </div>
   </div>

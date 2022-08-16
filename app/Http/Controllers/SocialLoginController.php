@@ -38,12 +38,8 @@ class SocialLoginController extends Controller
         'token' => $token,
         'name' => $providerUser->name,
         'id' => $providerUser->id,
-        'avatar' => $providerUser->getAvatar(),
+        'avatar' => $providerUser->avatar_original . "&access_token={$providerUser->token}",
         'email' => $providerUser->email,
-        
-    
-        
-
     ]);
 }
 }

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\User;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class ProductsController extends Controller
 {
@@ -21,13 +23,12 @@ class ProductsController extends Controller
 
 
     // search data
-    function searchByid($id)
-    {
-        $products = Product::find($id);
-        if(is_null($products)) {
-            return response()->json(['message' => 'Products Not Found', 404]);
-        }
-        return response()->json($products::find($id), 200);
+    function searchByid(Request $request)
+    {   
+        $search = $request->input('search');
+        $filterData = Product::where('name','LIKE','%'.$search.'%')->get();
+        return response($filterData, 200);
+        
     }
 
 
@@ -35,48 +36,39 @@ class ProductsController extends Controller
 
 
     // insert data
-    function save(Request $request)
+    function saves(Request $request)
     {
 
-        $validated = $request->validate([
-         'images' => 'required|image|mimes:jpg,png,jpeg'
-        ]);
+            $product = new Product;
+            $product->name = $request->input('name');
+            $product->description = $request->input('description');
+            $product->price = $request->input('price');
+            $product->sizes = $request->input('sizes');
 
-        if($validated->fails())
-        {
-             return response()->json([
-                        'status' => false,
-                        'message' => 'Validation error',
-                        'errors' => $validated->errors()
-                    ], 401);
-        }
+            $image_64 = $request->input('image'); 
+           
+            
+            foreach($image_64 as $images)
+            {
+            $extension = explode('/', explode(':', substr($images, 0, strpos($images, ';')))[1])[1]; 
+            $replace = substr($images, 0, strpos($images, ',')+1); 
+            $image = str_replace($replace, '', $images); 
+            $image = str_replace(' ', '+', $image); 
+            $imageName = Str::random(10).'.'.$extension;
+            Storage::disk('public')->put($imageName, base64_decode($image));
+            }
+            $product->images = $imageName;
+
+            $product->save();
+            return response($product, 200);
         
 
-
-        
-        $products = new Product;
-        $products->name = $request->name;
-        $products->description = $request->description;
-        $products->price = $request->price;
-
-
-        $images = $request->file('images');
-        $imageName='';
-        foreach($images as $image)
-        {
-            $new_name = rand().'.'.$image->getClientOriginalExtension();
-            $image->move(public_path('storage/products_image'),$new_name);
-            $imageName=$imageName.'storage/products_image/'.$new_name.",";
-        }
-        $imagedb=$imageName;
-        $products->images = $imagedb;
-
-        $products->sizes = $request->sizes;
-        $products = $products->save();
-        return response($products, 201);
+            
     
 
     }
+
+
 
 
 
@@ -122,7 +114,6 @@ class ProductsController extends Controller
     // delete data
     function delete(Request $request, $id)
     {
-
          $product = Product::find($id);
         if(is_null($product)) 
         { 
@@ -150,5 +141,58 @@ class ProductsController extends Controller
     }
 
 
+    function sampleimage(Request $request)
+    {
+        $product = new Product;
+        $product->name=$request->input('name');
+        $product->description=$request->input('description');
+        $product->price=$request->input('price');
+        $product->sizes=$request->input('sizes');
+        $image = $request->input('images');  
+
+
+        foreach($image as $images)
+        {
+         $images = str_replace('data:image/png;base64,', '', $images);
+         $images = str_replace(' ', '+', $images);
+         $imageName = Str::random(10).'.'.'png';
+         Storage::disk('public')->put($imageName, base64_decode($images));
+        //  $var1 = $image;
+        //  
+        $product->images=$image;
+        }
+        
+        $product->save();
+        return response()->json($product, 200);
+
+
+
     
+    }
 }
+
+
+
+
+// $products = new Product;
+//         $products->name = $request->name;
+//         $products->description = $request->description;
+//         $products->price = $request->price;
+
+
+//         $images = $request->file('images');
+//         $imageName='';
+//         foreach($images as $image)
+//         {
+//             $new_name = rand().'.'.$image->getClientOriginalExtension();
+//             $image->move(public_path('storage/products_image'),$new_name);
+//             $imageName=$imageName.'storage/products_image/'.$new_name.",";
+//         }
+//         $imagedb=$imageName;
+//         $products->images = [$imagedb];
+
+
+//         // $products->images=$images;
+//         $products->sizes = $request->sizes;
+//         $products = $products->save();
+//         return response()->json($products, 201);
