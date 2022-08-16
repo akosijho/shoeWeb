@@ -15,11 +15,9 @@ return new class extends Migration
     {
         Schema::create('wishlists', function (Blueprint $table) {
             $table->id();
-            $table->string('product_name');
-            $table->string('product_image')->nullable();
-            $table->string('wishlist_id')->nullable();
-            $table->unsignedBigInteger('userid')->nullable();
-            $table->foreign('userid')->references('id')->on('users');
+            $table->unsignedBigInteger('product_id')->nullable();
+            $table->foreign('product_id')->references('id')->on('products');
+            $table->string('user_id');
             $table->timestamps();
         });
     }

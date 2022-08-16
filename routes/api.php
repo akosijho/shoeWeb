@@ -67,7 +67,7 @@ Route::post('social/login', [SocialLoginController::class, 'socialLogin']);
 
 // Route::post('/category', [WishlistController::class, 'addwislist']);
 
-Route::get('/wishlist', [WishlistController::class, 'mywishlist']);
+Route::get('/wishlist/{user_id}', [WishlistController::class, 'mywishlist']);
 Route::post('/addwishlist',[WishlistController::class,'addwishlist']);
 
 
@@ -80,5 +80,9 @@ Route::get('/cart/{user_id}', [CartController::class, 'mycart']);
 Route::post('/addtocart',[CartController::class,'addToCart']);
 Route::post('/addquantity/{product_name}',[CartController::class,'addquantity']);
 Route::post('/subtractquantity/{product_name}',[CartController::class,'subtractquantity']);
+
+
+
+Route::get('/samplejoin',[WishlistController::class,'jointable']);
 
 

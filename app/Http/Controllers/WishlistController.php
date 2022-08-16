@@ -11,16 +11,23 @@ class WishlistController extends Controller
     function addwishlist(Request $request)
     {
         $insert = new Wishlist;
-        $insert->product_name = $request->input('getname');
-        $insert->product_image = $request->input('getprice');
-        $insert->wishlist_id = $request->input('user_id');
+        $insert->product_id = $request->input('product_id');
+        $insert->user_id = $request->input('user_id');
         $insert->save();
-        return redirect()->back();
+        return response()->json($insert,200);
     }
+
+   
 
     function mywishlist($user_id)
     {
-        $list = Wishlist::where('user_id','=',$user_id)->get();
-        return view('addwishlist', compact('list'));
+
+            $users = DB::table('products')
+            ->join('wishlists', 'products.id', '=', 'wishlists.product_id')
+            ->select('products.name','products.price','products.images')
+            ->where('wishlists.user_id', '=' ,$user_id)
+            ->get();
+            return response()->json($users, 200);
+          
     }
 }
