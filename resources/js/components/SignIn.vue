@@ -31,15 +31,17 @@
             <input type="submit" value="SIGN IN">
         </div>
         <div class="joinus">
-            <p>Not a Member? <router-link href="/JoinusPage">Join Us.</router-link></p>
+            <p>Not a Member? <router-link to="/joinuspage">Join Us.</router-link></p>
         </div>
     </form>
    
   </div>
+  <router-view></router-view>
 </template>
 
 <script>
 import axios from 'axios'
+
 export default {
     name: 'SignIn',
 

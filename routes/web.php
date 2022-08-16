@@ -19,11 +19,11 @@ use App\Http\Controllers\SigninController;
 Route::get('/welcome', function () {
     return view('welcome');
 });
-Route::get('/', function () {
-    return view('nike');
-});
 Route::get('/index', function () {
     return view('index');
+});
+Route::get('/', function () {
+    return view('nike');
 });
 Route::get('/about', function () {
     return view('layout.home.about');
@@ -33,6 +33,10 @@ Route::get('/home', function () {
     return view('index');
 });
 
+
+Route::get('/{any}', function () {
+    return view('nike');
+})->where('any','.*');
 
 Route::post('/contactus', [ArticleController::class, 'save']);
 

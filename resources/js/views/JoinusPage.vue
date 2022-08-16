@@ -1,10 +1,9 @@
 <template>
   
-   
+
   <JoinUs/>
   <Footer/>
-  <Router-view/>
-  
+ 
   
   
   

@@ -4,18 +4,32 @@
 
 env:
 	cp .env.example .env
+	cd laradock && cp .env.example .env 
 	
 up:
-	./vendor/bin/sail up -d
+	cd laradock && docker compose up -d nginx mariadb workspace 
 
 stop:
-	./vendor/bin/sail stop
+	cd laradock && docker compose stop
 
 migrate:
 	./vendor/bin/sail php artisan migrate
 	
 down:
-	./vendor/bin/sail down
+	cd laradock && docker compose down
+
+permission:
+	cd ../ && sudo chmod 777 -R $(shell pwd) && sudo chown -R $(shell id -u):$(shell id -g) $(shell pwd)/vendor/ 
+init:
+	cd laradock && docker compose exec -T workspace bash -c 'composer install'
+	cd laradock && docker compose exec -T workspace bash -c 'php artisan key:generate'
+	cd laradock && docker compose exec -T workspace bash -c 'php artisan migrate'
+	
+
+build:
+	cd laradock && docker compose build nginx mariadb workspace --no-cache
+bash:
+	cd laradock && docker compose exec --user laradock workspace bash
 
 move-up:
 	cd '/mnt/c/Users/SONATA STUDIO/' && pwd
