@@ -3,6 +3,7 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import router from './router';
 import JoinusPage from './views/JoinusPage.vue';
+import Main from './views/Main.vue';
 
 // import JoinUs from './components/JoinUs.vue';
 
@@ -15,7 +16,7 @@ import JoinusPage from './views/JoinusPage.vue';
 // app.mount('#app')
 
 
-createApp(JoinusPage).use(router).use(VueAxios, axios).mount('#app')
+createApp(Main).use(router).use(VueAxios, axios).mount('#app')
 
 // createApp(Main).mount("#app")
 

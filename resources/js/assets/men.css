@@ -1,0 +1,174 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ROW 1 */
+
+.row h2 , .head1, .head2
+{
+    margin-left: 50px;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 100;
+}
+.row
+{
+    text-align: center;
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.center ul li
+{
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+   
+}
+a
+{
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 15px;
+    color: #000000;
+    
+}
+.center
+{
+   margin: auto;
+}
+/* ROW 2 */
+
+.row2
+{
+    width: 100%;
+    margin-bottom: 60px;
+    
+}
+.men
+{
+    width: 93%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* ROW 3 */
+
+.row3
+{
+    
+    text-align: center;
+}
+.row3 p
+{
+    font-family: Arial;
+    font-size: 15px;
+    margin-bottom: -40px;
+}
+.row3 h2
+{
+    font-family:  "Helvetica Neue",Helvetica Arial,sans-serif;
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.row3 input
+{
+    background-color: #000000;
+    color: #fff;
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+}
+
+/* ROW 4 */
+
+ .row4
+ {
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+ }
+.pic1 , .pic2
+{
+    width: 100%;
+}
+.pic1image , .pic2image
+{
+    width: 92%;
+}
+.pic1image
+{
+    float: right;
+    margin-right: 5px;
+}
+.pic2image
+{
+    margin-left: 5px;
+}
+
+/* ROW 5 */
+
+.row5
+{
+    width: 100%;
+    margin-bottom: 60px;
+    
+}
+.pic3image
+{
+    width: 93%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* ROW 6 */
+.row6
+{
+    text-align: center;
+}
+.row6 .p1
+{
+    font-family: Arial;
+    font-size: 15px;
+    margin-bottom: -50px;
+}
+.row6 .p2
+{
+    font-family: Arial;
+    font-size: 15px;
+    margin-bottom: 25px;
+
+    
+}
+ .row6 h2
+ {
+    font-family:  "Helvetica Neue",Helvetica Arial,sans-serif;
+    font-size: 60px;
+    margin-bottom: 2px;
+
+ }
+
+ .row6 input
+ {
+    background-color: #000000;
+    color: #fff;
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+    margin-bottom: 90px;
+ }
+
+ .head3
+ {
+    margin-left: 50px;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 100;
+ }

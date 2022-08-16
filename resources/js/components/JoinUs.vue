@@ -298,16 +298,18 @@
             <input type="submit" value="JOIN US">
         </div>
         <div class="joinus">
-            <p>Already a Member? <router-link to="/signpage">Sign In.</router-link></p>
+            <p>Already a Member? <router-link to="/signinpage">Sign In.</router-link></p>
         </div>
     </form>
     </div>
     </div>
+      <router-view></router-view>
 </template>
 
 
 <script>
 import axios from 'axios'
+
 export default {
     name:'JoinUs',
 

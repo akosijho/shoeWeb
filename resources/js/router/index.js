@@ -2,8 +2,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 
-
 import JoinusPage from '../views/JoinusPage.vue'
+import SigninPage from '../views/SigninPage.vue'
 import Footer from '../components/Footer.vue'
 import SignIn from '../components/SignIn.vue'
 
@@ -11,27 +11,31 @@ import SignIn from '../components/SignIn.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/joinuspage',
     name: 'JoinusPage',
     component: JoinusPage
   },
   {
-    path: '/footer',
-    name: 'Footer',
-    component: Footer
-  },
-  {
-    path: '/signin',
-    name: 'signin',
-    component: SignIn
+    path: '/signinpage',
+    name: 'signinpage',
+    component: SigninPage
   },
   
 
 ]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes
 })
+
+// const app = new Vue({
+//   router,
+//   methods: {
+//     changeRoute(route) {
+//       // `route` is either a string or object
+//       router.push(route);
+//     }
+//   }})
 
 export default router
