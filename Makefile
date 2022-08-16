@@ -7,7 +7,7 @@ env:
 	cd laradock && cp .env.example .env 
 	
 up:
-	cd laradock && docker compose up -d nginx mariadb workspace 
+	cd laradock && docker compose up -d nginx mysql workspace 
 
 stop:
 	cd laradock && docker compose stop
@@ -24,10 +24,11 @@ init:
 	cd laradock && docker compose exec -T workspace bash -c 'composer install'
 	cd laradock && docker compose exec -T workspace bash -c 'php artisan key:generate'
 	cd laradock && docker compose exec -T workspace bash -c 'php artisan migrate'
+	cd laradock && docker compose exec -T workspace bash -c 'npm install'
 	
 
 build:
-	cd laradock && docker compose build nginx mariadb workspace --no-cache
+	cd laradock && docker compose build nginx mysql workspace --no-cache
 bash:
 	cd laradock && docker compose exec --user laradock workspace bash
 
