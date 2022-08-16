@@ -4,7 +4,8 @@
 	</div>
 	
 	<div class="containers">
-	<div class="card">
+	
+	<div class="card_1">
 		<div class="card-image">
 			<div class="square">
 				<img src="Images/pencil 1.png" alt="pencil">
@@ -29,7 +30,7 @@
 		
 	</div>
 
-	<div class="card">
+	<div class="card_2">
 		<div class="card-image">
 			<div class="square">
 				<img src="Images/hand 1.png" alt="pencil">
@@ -49,13 +50,13 @@
 				Lorem ipsum dolor sit amet,  consectetur 
 				adipiscing elit.
 			</p>
-			</div>
+							</div>
 		</div>
 		
 		
 	</div>
 
-	<div class="card">
+	<div class="card_3">
 		<div class="card-image">
 			<div class="square">
 				<img src="Images/low-price 1.png" alt="pencil">

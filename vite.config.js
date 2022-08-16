@@ -6,12 +6,20 @@ export default defineConfig({
     plugins: [
         vue(),
         laravel({
+            
+           input: [
+            'resources/css/app.css',
+            'resources/css/vue.css',
+            'resources/js/app.js',
+            'resources/js/scrollanchor.js',
+            'resources/js/scrollreveal.min.js',
+            'resources/js/index.js',
+            
 
-            input: [
-                'resources/css/app.css',
-                'resources/js/app.js',
-            ],
-            refresh: true,
-        }),
+        ],
+        refresh: true,
+     }), 
+
     ],
+   
 });

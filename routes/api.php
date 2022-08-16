@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SocialiteController;
+use App\Http\Controllers\JoinusController;
+use App\Http\Controllers\SignInController;
 use App\Http\Controllers\SocialLoginController;
 use App\Http\Controllers\WishlistController;
 
@@ -55,6 +57,14 @@ Route::post('/auth/login',[AuthController::class,'loginUser']);
 //Socialite Google
 Route::get('/auth/google/redirect', [SocialiteController::class, 'googleredirect']);
 Route::get('/auth/google/callback', [SocialiteController::class, 'googlecallback']);
+
+
+//Sign In - Signin.vue
+// Route::resource('joinus','JoinusController');
+
+Route::post('/joinus', [JoinusController::class,'save']);
+Route::post('/signin', [SigninController::class,'save']);
+
 
 
 

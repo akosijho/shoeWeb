@@ -4,19 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="Images/app_logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    
-    
+  
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <title>Shoe-Web</title>
 </head>
 <body>
-<!-- <div class="loader-wrapper" id="loads">
-    <span class="loader"><span class="loader-inner"></span></span>
-</div> -->
-<!-- <div id="loading"></div> -->
 
+    
     @yield('content')
     
  <!--=============== SCROLL REVEAL===============-->
@@ -37,37 +34,17 @@
 
  </script>      
  
- <script src ="./index.js"></script>
- <script src ="./scrollanchor.js"></script>
- <script src ="./jquery-3.6.0.min.js"></script>
- <script src ="./scrollreveal.min.js"></script>
- 
+    @vite(['resources/js/index.js','resources/js/scrollanchor.js', 'resources/js/scrollreveal.min.js'])
  
 
  <script>
-        // $(windows).on("load",function(){
-        //   $(".loader-wrapper").fadeOut("slow");
-        // });
-
-        // $(document).ready(function(){
-        // $('.loader-wrapper').fadeOut(500);
-        //     });
-
-        // var loader = getElementbyID("loads");
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
     </script>
- <script>
-		// $(document).ready(function(){
-			// 	$('div#loading').removeAttr('id');
-		// });
-		var preloader = document.getElementById("loading");
-		// window.addEventListener('load', function(){
-		// 	preloader.style.display = 'none';
-		// 	})
 
-		function myFunction(){
-			preloader.style.display = 'none';
-		};
-	</script>
+
+
 </body>
  
 </html>

@@ -1,0 +1,171 @@
+/* ABOUT */
+
+
+
+.about_row
+{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	background-image: url('../asset/images/flurabels.png');
+	background-repeat:no-repeat ;
+	background-size: auto;
+  	background-position: center;
+	height: 948px;
+	width: 100%;
+}
+.about_col
+{
+	flex-basis: 100%;
+	position: relative;
+	padding-top: 589px;
+}
+
+.about_row h1
+{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 42px;
+	color: #24EA7C;
+	padding-bottom: 10px;
+}
+.about_row p
+{
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	color: #fff;
+}
+
+.about_row_2
+{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	
+	
+}
+.about_col_1
+{
+	flex-basis: 100%;
+	position: relative;
+	padding-top: 280px;
+	margin-bottom: 280px;
+	
+
+}
+.about_col_1 p
+{
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 23px;
+	color: #444444;
+	padding-left: 131px;
+	padding-right: 131px;
+
+}
+.teamtitle_row
+{
+	text-align: left;
+	display: flex;
+	margin-bottom: 62px;
+	position: relative;
+	flex-basis: 100%;
+    right: 0;
+    top: 0;
+
+}
+.teamtitle
+{
+    padding-left: 131px;
+}
+
+.teamtitle h1
+{
+	font-family: 'Open Sans';
+	font-weight: 700;
+	font-size: 42px;
+	color: #000000;
+	margin-bottom: 10px;
+}
+.teamtitle p
+{
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 25px;
+	color: #444444;
+}
+
+.faceid
+{
+	width: 328px;
+	height: 227px;
+	position: relative;
+	-webkit-box-shadow: 3px 8px 28px -7px rgba(3,3,3,0.87); 
+	box-shadow: 3px 8px 28px -7px rgba(3,3,3,0.87);
+    
+	margin-bottom: 8px;
+	
+	
+}
+
+.box
+
+{
+	width: 328px;
+	height: 300px;
+	margin-right: 50px;
+	display: inline-block;
+	
+
+}
+.teamrow_1
+{
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 62px;
+	width: 100%;
+	display: flex;
+    margin-left: 31px;
+	flex-basis: 100%;
+
+
+}
+.teamrow_2
+{
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 62px;
+	width: 100%; 
+	display: flex;
+    margin-left: 31px;
+	flex-basis: 100%;
+	
+
+}
+.teamrows
+{
+	justify-content: center;
+	margin-left: auto;
+  	margin-right: auto;
+	width: 100%;
+}
+.about_content
+{
+	font-family: 'Open Sans';
+}
+.about_content h2
+{
+	margin-bottom: 8px;
+	font-weight: 700;
+	font-size: 42px;
+	color: #000000;
+}
+.about_content p
+{
+	font-weight: 400;
+	font-size: 25px;
+	font-weight: 400;
+	font-size: 25px;
+}

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\SigninController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,13 +19,27 @@ use App\Http\Controllers\ArticleController;
 Route::get('/welcome', function () {
     return view('welcome');
 });
+Route::get('/index', function () {
+    return view('index');
+});
+Route::get('/', function () {
+    return view('nike');
+});
+Route::get('/about', function () {
+    return view('layout.home.about');
+});
+
+Route::get('/home', function () {
+    return view('index');
+});
+
 
 Route::get('/{any}', function () {
     return view('nike');
 })->where('any','.*');
-// Route::get('/contactus', function () {
-//     return view('contactus');
-// });
 
 Route::post('/contactus', [ArticleController::class, 'save']);
 
+Route::get('/rs', function () {
+    return view('rs');
+});
