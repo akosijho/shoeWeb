@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import JoinusPage from '../views/JoinusPage.vue'
 import SigninPage from '../views/SigninPage.vue'
+import Main from '../views/Main.vue'
 import Footer from '../components/Footer.vue'
 import SignIn from '../components/SignIn.vue'
 
