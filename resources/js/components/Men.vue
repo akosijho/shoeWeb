@@ -65,6 +65,6 @@ export default {
 
 <style>
 
-@import "../assets/men.css";
+@import "../asset/men.css";
 
 </style>

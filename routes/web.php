@@ -21,7 +21,6 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-
 // Route::get('/{any}', function () {
 //     return view('nike');
 // })->where('any','.*');

@@ -6,7 +6,7 @@ import JoinusPage from '../views/JoinusPage.vue'
 import SigninPage from '../views/SigninPage.vue'
 import Footer from '../components/Footer.vue'
 import SignIn from '../components/SignIn.vue'
-
+import Main from '../views/Main.vue'
 
 
 const routes = [
@@ -19,6 +19,11 @@ const routes = [
     path: '/signinpage',
     name: 'signinpage',
     component: SigninPage
+  },
+  {
+    path: '/main',
+    name: 'home',
+    component: Main
   },
   
 

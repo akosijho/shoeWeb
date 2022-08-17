@@ -5,11 +5,12 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SocialiteController;
-
 use App\Http\Controllers\SocialLoginController;
 use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\CartController;
-
+// use App\Http\Controllers\SocialLoginController;
+// use App\Http\Controllers\WishlistController;
+// use App\Http\Controllers\CartController;
 use App\Http\Controllers\JoinusController;
 use App\Http\Controllers\SignInController;
 

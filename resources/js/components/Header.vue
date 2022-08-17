@@ -9,7 +9,7 @@
       <li><router-link to="/signinpage">Sign In</router-link></li>
     </ul>
   </div>
-   <router-view></router-view>
+   <!-- <router-view></router-view> -->
 </template>
 
 <script>
@@ -20,5 +20,7 @@ export default {
 </script>
 
 <style>
-  @import "../assets/styles.css";
+
+  @import "../asset/styles.css";
+
 </style>
