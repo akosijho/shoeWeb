@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\SigninController;
 
 
@@ -19,6 +20,26 @@ use App\Http\Controllers\SigninController;
 Route::get('/welcome', function () {
     return view('welcome');
 });
+
+
+// Route::get('/{any}', function () {
+//     return view('nike');
+// })->where('any','.*');
+// Route::get('/contactus', function () {
+//     return view('contactus');
+// });
+
+Route::post('/contactus', [ArticleController::class, 'save']);
+
+Route::get('/wishlist', [WishlistController::class, 'index']);
+
+
+Route::post('/addwishlist', [WishlistController::class, 'addwishlist'])->name('wishlist.save');
+
+Route::get('/mywishlist/{request}', [WishlistController::class, 'mywishlist']);
+
+
+
 Route::get('/index', function () {
     return view('index');
 });
@@ -38,8 +59,8 @@ Route::get('/{any}', function () {
     return view('nike');
 })->where('any','.*');
 
-Route::post('/contactus', [ArticleController::class, 'save']);
 
 Route::get('/rs', function () {
     return view('rs');
 });
+
