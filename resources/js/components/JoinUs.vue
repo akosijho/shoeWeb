@@ -350,5 +350,5 @@ export default {
 </script>
 
 <style>
-@import "../assets/joinus.css";
+@import "../asset/joinus.css";
 </style>

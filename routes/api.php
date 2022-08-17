@@ -9,8 +9,8 @@ use App\Http\Controllers\SocialLoginController;
 use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\CartController;
 // use App\Http\Controllers\SocialLoginController;
-use App\Http\Controllers\WishlistController;
-use App\Http\Controllers\CartController;
+// use App\Http\Controllers\WishlistController;
+// use App\Http\Controllers\CartController;
 use App\Http\Controllers\JoinusController;
 use App\Http\Controllers\SignInController;
 

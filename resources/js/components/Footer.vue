@@ -80,6 +80,6 @@ export default{
 
 <style>
 
-@import "../assets/vue.css";
+@import "../asset/vue.css";
 
 </style>
