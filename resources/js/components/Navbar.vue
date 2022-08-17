@@ -21,10 +21,13 @@
 
 <script>
 export default {
-    name: 'Navbar'
+    name: 'NavBar'
+
 }
 </script>
 
 <style>
+
     @import "../asset/styles.css";
+
 </style>
