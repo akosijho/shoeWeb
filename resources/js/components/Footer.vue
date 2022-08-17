@@ -36,10 +36,10 @@
             </div>
             <div class="social_media_col">
                 <ul>
-                    <li><a href="#"><img src="Images/twgray.png" alt="Twitter" class="logo"></a></li>
-                    <li><a href="#"><img src="Images/fbgray.png" alt="Twitter" class="logo"></a></li>
-                    <li><a href="#"><img src="Images/ytgray.png" alt="Twitter" class="logo"></a></li>
-                    <li><a href="#"><img src="Images/iggray.png" alt="Twitter" class="logo"></a></li>
+                    <li><a href="#"><img src="http://127.0.0.1:3000/resources/js/asset/images/twgray.png" alt="Twitter" class="logo"></a></li>
+                    <li><a href="#"><img src="http://127.0.0.1:3000/resources/js/asset/images/fbgray.png" alt="Twitter" class="logo"></a></li>
+                    <li><a href="#"><img src="http://127.0.0.1:3000/resources/js/asset/images/ytgray.png" alt="Twitter" class="logo"></a></li>
+                    <li><a href="#"><img src="http://127.0.0.1:3000/resources/js/asset/images/iggray.png" alt="Twitter" class="logo"></a></li>
                     
                 </ul>
 

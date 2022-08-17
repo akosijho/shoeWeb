@@ -28,7 +28,7 @@ init:
 	
 
 build:
-	cd laradock && docker compose build nginx mysql workspace --no-cache
+	cd laradock && docker compose build --no-cache nginx mysql workspace 
 bash:
 	cd laradock && docker compose exec --user laradock workspace bash
 
