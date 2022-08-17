@@ -20,4 +20,3 @@ createApp(Main).use(router).use(VueAxios, axios).mount('#app')
 
 // createApp(Main).mount("#app")
 
-
