@@ -25,18 +25,18 @@
         <div class="footer_col c2">
             
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Features</a></li>
-                <li><a href="">How it works</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#howitworks">How it works</a></li>
                 <li><a href="">Tariffs</a></li>
                 </ul>
             </div>
         <div class="footer_col c3">
                 
             <ul>
-                <li><a href="">About</a></li>
+                <li><a href="/about">About</a></li>
                 <li><a href="">Cities</a></li>
-                <li><a href="">Contact us</a></li>
+                <li><a href="#contact">Contact us</a></li>
             </ul>
         </div>
         <div class="footer_col c4">
@@ -58,4 +58,9 @@
         <p>2021 abc P Ltd, All Right Reserved</p>
     </div>
 </footer>
+
+
 </section>
+<div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>

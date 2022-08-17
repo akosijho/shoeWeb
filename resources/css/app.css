@@ -1,1 +1,17 @@
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300&family=Open+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url(header.scss);
+@import url(headerabout.scss);
+@import url(body.scss);
+@import url(home.scss);
+@import url(about.scss);
+@import url(howitworks.scss);
+@import url(features.scss);
+@import url(testimonials.scss);
+@import url(contactus.scss);
+@import url(testimonials.scss);
+@import url(whatareyouwaiting.scss);
+@import url(footer.scss);
+/* @import url(loader.scss); */
+@import url(media.scss);

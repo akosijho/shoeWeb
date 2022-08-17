@@ -8,6 +8,13 @@ use App\Http\Controllers\SocialiteController;
 use App\Http\Controllers\SocialLoginController;
 use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\CartController;
+// use App\Http\Controllers\SocialLoginController;
+use App\Http\Controllers\WishlistController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\JoinusController;
+use App\Http\Controllers\SignInController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -85,4 +92,11 @@ Route::post('/subtractquantity/{product_name}',[CartController::class,'subtractq
 
 Route::get('/samplejoin',[WishlistController::class,'jointable']);
 
+
+
+//Sign In - Signin.vue
+// Route::resource('joinus','JoinusController');
+
+Route::post('/joinus', [JoinusController::class,'save']);
+Route::post('/signin', [SigninController::class,'save']);
 

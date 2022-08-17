@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\WishlistController;
+use App\Http\Controllers\SigninController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -35,4 +37,29 @@ Route::post('/addwishlist', [WishlistController::class, 'addwishlist'])->name('w
 
 Route::get('/mywishlist/{request}', [WishlistController::class, 'mywishlist']);
 
+
+
+Route::get('/index', function () {
+    return view('index');
+});
+Route::get('/', function () {
+    return view('nike');
+});
+Route::get('/about', function () {
+    return view('layout.home.about');
+});
+
+Route::get('/home', function () {
+    return view('index');
+});
+
+
+Route::get('/{any}', function () {
+    return view('nike');
+})->where('any','.*');
+
+
+Route::get('/rs', function () {
+    return view('rs');
+});
 
