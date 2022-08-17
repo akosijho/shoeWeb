@@ -22,9 +22,12 @@
 <script>
 export default {
     name: 'NavBar'
+
 }
 </script>
 
 <style>
+
     @import "../asset/styles.css";
+
 </style>

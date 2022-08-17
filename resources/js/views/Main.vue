@@ -1,6 +1,6 @@
 <template>
   <Header/>
-  <Navbar/>
+  <NavBar/>
   <Discount/>
   <Banner/>
   <BannerDetails/>
@@ -12,7 +12,7 @@
 
 <script>
 import Header from "../components/Header.vue";
-import Navbar from "../components/Navbar.vue";
+import NavBar from "../components/NavBar.vue";
 import Discount from "../components/Discount.vue";
 import Banner from "../components/Banner.vue";
 import BannerDetails from "../components/BannerDetails.vue";
@@ -23,7 +23,7 @@ export default{
   name: 'Main',
   components: {
     Header,
-    Navbar,
+    NavBar,
     Discount,
     Banner,
     BannerDetails,
