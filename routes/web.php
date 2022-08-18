@@ -39,10 +39,10 @@ Route::get('/mywishlist/{request}', [WishlistController::class, 'mywishlist']);
 
 
 
-Route::get('/index', function () {
+Route::get('/', function () {
     return view('index');
 });
-Route::get('/', function () {
+Route::get('/nike', function () {
     return view('nike');
 });
 Route::get('/about', function () {
