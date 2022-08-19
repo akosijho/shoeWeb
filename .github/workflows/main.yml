@@ -30,4 +30,6 @@ jobs:
       # Bulding and deploying
       - name: Building and Deploying laravel docker
         run: |
+          pwd
+          whoami
           make deploy
