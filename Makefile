@@ -26,14 +26,14 @@ init:
 	cd laradock && docker compose exec -T workspace bash -c 'php artisan migrate'
 	cd laradock && docker compose exec -T workspace bash -c 'npm install'
 	
-depoy:
+deploy:
 	make env
 	cd laradock && docker compose up -d nginx mysql workspace
 	cd laradock && docker compose exec -T workspace bash -c 'composer install'
 	cd laradock && docker compose exec -T workspace bash -c 'php artisan key:generate'
 	cd laradock && docker compose exec -T workspace bash -c 'php artisan migrate'
 	cd laradock && docker compose exec -T workspace bash -c 'npm install'
-	
+
 build:
 	cd laradock && docker compose build  nginx mysql workspace
 	
