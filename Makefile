@@ -32,7 +32,7 @@ deploy:
 	cd laradock && docker compose exec -T workspace bash -c 'composer install'
 	cd laradock && docker compose exec -T workspace bash -c 'php artisan key:generate'
 	cd laradock && docker compose exec -T workspace bash -c 'php artisan migrate'
-	cd laradock && docker compose exec -T workspace bash -c 'npm install'
+	cd laradock && docker compose exec -T workspace bash -c 'npm install && npm run build'
 
 build:
 	cd laradock && docker compose build  nginx mysql workspace
