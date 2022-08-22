@@ -1,6 +1,6 @@
 <section class="sections" id="features">
 	<div class="contitle">
-		<h1 class="title">Feature</h1>
+		<h1 class="title">Features</h1>
 	</div>
 	
 	<div class="containers">
