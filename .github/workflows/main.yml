@@ -33,3 +33,4 @@ jobs:
           pwd
           whoami
           make deploy
+          make permission
