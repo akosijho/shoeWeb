@@ -16,7 +16,7 @@
       <a href='https://play.google.com/store/apps/details?id=com.rovio.abcasual&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='Images/gplay.png' class="googleplay"/></a>
       
             <div class="rectangle">
-      <img src="Images/rectangle.png" class="">
+      <img src="Images/rectangle.png" class="rectangle">
             </div>
                   </div>
                         </div>

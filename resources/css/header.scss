@@ -44,16 +44,16 @@ nav ul li {
 }
 
 nav ul li a{
-    position: relative;
-    margin: 0 25px;
-    text-decoration: none;
-    color:#000000;
-    /* letter-spacing: 2px; */
-    font-weight: 500;
-    transition: 0.6s;
-	font-family: 'Open Sans', sans-serif;
-	/* font-weight: 400; */
-	font-size: 15px;
+                position: relative;
+                margin: 0 25px;
+                text-decoration: none;
+                color:#000000;
+                /* letter-spacing: 2px; */
+                font-weight: 500;
+                transition: 0.6s;
+                font-family: 'Open Sans', sans-serif;
+                /* font-weight: 400; */
+                font-size: 15px;
 }
 nav.sticky .brand, 
 nav.sticky ul li a{
