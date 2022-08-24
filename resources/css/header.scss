@@ -44,16 +44,16 @@ nav ul li {
 }
 
 nav ul li a{
-                position: relative;
-                margin: 0 25px;
-                text-decoration: none;
-                color:#000000;
-                /* letter-spacing: 2px; */
-                font-weight: 500;
-                transition: 0.6s;
-                font-family: 'Open Sans', sans-serif;
-                /* font-weight: 400; */
-                font-size: 15px;
+    position: relative;
+    margin: 0 25px;
+    text-decoration: none;
+    color:#000000;
+    /* letter-spacing: 2px; */
+    font-weight: 500;
+    transition: 0.6s;
+    font-family: 'Open Sans', sans-serif;
+    /* font-weight: 400; */
+    font-size: 15px;
 }
 nav.sticky .brand, 
 nav.sticky ul li a{
@@ -67,12 +67,12 @@ nav.sticky ul li a{
 	cursor: pointer;
 	
 }
-.menu-icon
-{
-	width: 25px;
-	cursor: pointer;
-	display: none;
-}
+// .menu-icon
+// {
+// 	width: 25px;
+// 	cursor: pointer;
+// 	display: none;
+// }
 nav ul li a:hover
 {
 	color: 	#007F66;
@@ -117,23 +117,21 @@ color: #4B81F4;
 .textbottom h2
 {
 	position: absolute;
-width: 281px;
-height: 57px;
-left: 580px;
-top: 782px;
-
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 42px;
-line-height: 57px;
-
-color: #000000;
-}
+    width: 281px;
+    height: 57px;
+    left: 580px;
+    top: 782px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 57px;
+    color: #000000;
+}   
 .rectangle
 {
 	position: absolute;
-width: 147px;
-height: 156.1px;
-left: 50px;
-top: 647px;}
+    width: 147px;
+    height: 156.1px;
+    left: 50px;
+    top: 647px;}
