@@ -35,10 +35,10 @@ deploy:
 	cd laradock && docker compose exec -T workspace bash -c 'npm install'
 
 build:
-	cd laradock && docker compose build  nginx mysql workspace
+	cd laradock && docker compose build nginx mysql workspace
 	
 rebuild:
-	cd laradock && docker compose build  nginx mysql workspace --no-cache
+	cd laradock && docker compose build --no-cache nginx mysql workspace 
 bash:
 	cd laradock && docker compose exec --user laradock workspace bash
 
