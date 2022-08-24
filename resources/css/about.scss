@@ -7,18 +7,23 @@
 	text-align: center;
 	display: flex;
 	justify-content: center;
-	background-image: url('../asset/images/flurabels.png');
+	background-image: url('http://127.0.0.1:3000/resources/asset/images/flurabels.png');
 	background-repeat:no-repeat ;
-	background-size:100% 100%;
+	background-size:100%;
   	background-position: center;
-	height: 948px;
+	
+}
+.about_row{
 	width: 100%;
 }
 .about_col
 {
-	flex-basis: 100%;
-	position: relative;
-	padding-top: 589px;
+	
+	padding-top: 325px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .about_row h1
