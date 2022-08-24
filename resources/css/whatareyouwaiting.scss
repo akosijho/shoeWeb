@@ -1,13 +1,23 @@
 /* WHAT ARE YOU WAITING */
 
 
+.section_what
+{
+	background-image: url('../asset/images/footer.png');
+	background-repeat:no-repeat ;
+  	background-position: center;
+	background-size: 100%;
+	
+}
+.section_what{
+	width: 100%;
+}
 
 .what_row
 {
 	text-align: center;
 	display: flex;
 	justify-content: center;
-	
 }
 .what_store
 {
