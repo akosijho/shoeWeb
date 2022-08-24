@@ -2,6 +2,7 @@
 @section('content')  
 
     
+      @include('layout.header')
       @include('layout.home.home')
       @include('layout.home.howitworks')
       @include('layout.home.features')
