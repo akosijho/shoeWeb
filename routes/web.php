@@ -54,9 +54,9 @@ Route::get('/home', function () {
 });
 
 
-Route::get('/{any}', function () {
-    return view('nike');
-})->where('any','.*');
+// Route::get('/{any}', function () {
+//     return view('nike');
+// })->where('any','.*');
 
 
 Route::get('/rs', function () {
