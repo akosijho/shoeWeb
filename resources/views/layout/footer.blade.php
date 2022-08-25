@@ -8,7 +8,7 @@
         <div class="footer_col c1">
             
             
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+            <p>Lorem ipsum dolor amet, consectetur adipiscing elit.<br>
                 Nullam id fermentum lorem. Lorem ipsum dolor sit amet,<br>
                 consectetur adipiscing elit. Nullam id fermentum lorem.</p>
             <div class="social_media">
