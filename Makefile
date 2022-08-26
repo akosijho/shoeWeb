@@ -7,7 +7,7 @@ env:
 	cd laradock && cp .env.example .env 
 	
 up:
-	cd laradock && docker compose up -d nginx mysql workspace 
+	cd laradock && docker compose up -d nginx traefik mysql workspace 
 
 stop:
 	cd laradock && docker compose stop
@@ -28,7 +28,7 @@ init:
 	
 deploy:
 	make env
-	cd laradock && docker compose up -d nginx mysql workspace
+	cd laradock && docker compose up -d nginx traefik mysql workspace
 	cd laradock && docker compose exec -T workspace bash -c 'composer install'
 	cd laradock && docker compose exec -T workspace bash -c 'php artisan key:generate'
 	cd laradock && docker compose exec -T workspace bash -c 'php artisan migrate'
@@ -49,5 +49,5 @@ message:
 alias:
 	alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 traefik:
-	cd laradock && docker-compose -f traefik-docker-compose.yml up -d 
+	cd laradock && docker-compose -f docker-compose.yml traefik-docker-compose.yml up -d 
 
