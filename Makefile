@@ -48,4 +48,6 @@ message:
 	echo "hello world"
 alias:
 	alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+traefik:
+	cd laradock && docker-compose -f traefik-docker-compose.yml up -d 
 
